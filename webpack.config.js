@@ -30,6 +30,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
        Countdown: 'app/components/Countdown.jsx',
        Clock: 'app/components/Clock.jsx',
        CountdownForm: 'app/components/CountdownForm.jsx',
+       Controls: 'app/components/Controls.jsx',
        applicationStyles: 'app/styles/app.scss'
      },
      extensions: ['', '.js', '.jsx']
