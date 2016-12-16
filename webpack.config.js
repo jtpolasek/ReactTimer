@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
+var path = require('path');
 
  module.exports = {
    entry: [
@@ -46,7 +47,11 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
          exclude: /(node_modules|bower_components)/
        }
      ]
-
+   },
+   sassLoader: {
+     includePaths: [
+       path.resolve(__dirname, './node_modules/foundation-sites/scss')
+     ]
    },
     devtool: 'inline-source-map'
  };
